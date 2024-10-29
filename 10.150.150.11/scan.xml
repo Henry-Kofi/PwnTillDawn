@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Oct 29 08:34:52 2024 as: /usr/lib/nmap/nmap -&#45;privileged -vv -sV -sC -oX scan.xml 10.150.150.11 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -sV -sC -oX scan.xml 10.150.150.11" start="1730190892" startstr="Tue Oct 29 08:34:52 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1730190892"/>
+<taskend task="NSE" time="1730190892"/>
+<taskbegin task="NSE" time="1730190892"/>
+<taskend task="NSE" time="1730190892"/>
+<taskbegin task="NSE" time="1730190892"/>
+<taskend task="NSE" time="1730190892"/>
+<taskbegin task="Ping Scan" time="1730190892"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.150.150.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1730190893" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1730190893"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1730190893"/>
+<taskbegin task="SYN Stealth Scan" time="1730190893"/>
+<taskend task="SYN Stealth Scan" time="1730190896" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730190896"/>
+<taskprogress task="Service scan" time="1730190955" percent="57.14" remaining="45" etc="1730190999"/>
+<taskend task="Service scan" time="1730190988" extrainfo="14 services on 1 host"/>
+<taskbegin task="NSE" time="1730190988"/>
+<taskend task="NSE" time="1730190999"/>
+<taskbegin task="NSE" time="1730190999"/>
+<taskend task="NSE" time="1730191002"/>
+<taskbegin task="NSE" time="1730191002"/>
+<taskend task="NSE" time="1730191002"/>
+<host starttime="1730190893" endtime="1730191002"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.150.150.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="986">
+<extrareasons reason="reset" count="986" proto="tcp" ports="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79,81-85,88-90,99-100,106,109-111,113,119,125,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,444,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3322-3325,3333,3351,3367,3369-3372,3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49158-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="(Win64) OpenSSL/1.1.1g PHP/7.4.9" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="PwnDrive - Your Personal Online Storage"><elem key="title">PwnDrive - Your Personal Online Storage</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 3345FF745865D02B994859241BCE2B36"/><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="(Win64) OpenSSL/1.1.1g PHP/7.4.9" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="ssl-cert" output="Subject: commonName=localhost&#xa;Issuer: commonName=localhost&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2009-11-10T23:48:47&#xa;Not valid after:  2019-11-08T23:48:47&#xa;MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0&#xa;SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls&#xa;b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD&#xa;VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj&#xa;7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o&#xa;J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT&#xa;gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD&#xa;gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd&#xa;aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL&#xa;vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">C125D327E3ECAD0D836A6DE75F9A751023E2909DA063958F1D419A58D59C638C5B73869079CCC3D6A389B875BC1E947C7C6EE3ADE8275C0BC60C6AF90F32FEB3C47A1023042B2928D4AAF9B32F6610F8A7C1CD60C46B2857E3673BF79ECD4822DC38EA4813803A4097570C4735463D71629AEE539D630E677A28C9A434FF19ED</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2009-11-10T23:48:47</elem>
+<elem key="notAfter">2019-11-08T23:48:47</elem>
+</table>
+<elem key="md5">a0a44cc99e84b26f9e639f9ed229dee0</elem>
+<elem key="sha1">b0238c547a905bfa119c4e8baccaeacf36491ff6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls&#xa;b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD&#xa;VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj&#xa;7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o&#xa;J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT&#xa;gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD&#xa;gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd&#xa;aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL&#xa;vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: 3345FF745865D02B994859241BCE2B36"/><script id="http-title" output="PwnDrive - Your Personal Online Storage"><elem key="title">PwnDrive - Your Personal Online Storage</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows Server 2008 R2 Enterprise 7601 Service Pack 1 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2012" version="11.00.2100.00; RTM" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2012:gold</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ms-sql-ntlm-info" output="&#xa;  10.150.150.11:1433: &#xa;    Target_Name: PWNDRIVE&#xa;    NetBIOS_Domain_Name: PWNDRIVE&#xa;    NetBIOS_Computer_Name: PWNDRIVE&#xa;    DNS_Domain_Name: PwnDrive&#xa;    DNS_Computer_Name: PwnDrive&#xa;    Product_Version: 6.1.7601"><table key="10.150.150.11:1433">
+<elem key="Target_Name">PWNDRIVE</elem>
+<elem key="NetBIOS_Domain_Name">PWNDRIVE</elem>
+<elem key="NetBIOS_Computer_Name">PWNDRIVE</elem>
+<elem key="DNS_Domain_Name">PwnDrive</elem>
+<elem key="DNS_Computer_Name">PwnDrive</elem>
+<elem key="Product_Version">6.1.7601</elem>
+</table>
+</script><script id="ms-sql-info" output="&#xa;  10.150.150.11:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2012 RTM&#xa;      number: 11.00.2100.00&#xa;      Product: Microsoft SQL Server 2012&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.150.150.11:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2012 RTM</elem>
+<elem key="number">11.00.2100.00</elem>
+<elem key="Product">Microsoft SQL Server 2012</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2024-10-29T06:22:55&#xa;Not valid after:  2054-10-29T06:22:55&#xa;MD5:   a1de:6c04:82cb:c76c:4bea:0aea:0f32:4946&#xa;SHA-1: 7a94:4ba0:3880:2919:02a8:e537:f21d:d747:a50a:a8da&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQcFmvQ4GNBo1KQ9/ZMBya3TANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQxMDI5MDYyMjU1WhgPMjA1NDEwMjkwNjIyNTVaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuBvtXGViHXW5&#xa;xWf58bAOgNKJ+GJNDIuTaOhNfRW9HStF+sXDLu7iSgQkDzzJO6sl2KJro/9VQHKP&#xa;uOfaTqgpv9rLRrx60SzI4mywLyjwhEabL+XcKZOXyf6/egOZHEkp5bJA3JjxkEk+&#xa;1Y9DsCRQCRwmh3E8UN1ZDV1yubbG1NUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCy&#xa;FGcKSmS+vWDbgR7uFTfTd4z3FEFwZgehofbunI+NmuXDmI10wg7O+8J7eXjeUnil&#xa;xxTvox0dQPqZfR448VL9AobHIcrHZg/d9tjwyajnYAdjKG3+nGEEoHH59dVAYbvD&#xa;MncB2zYS4R3llfl1vRxf0wv9/ZEd959zWY1QF+rkuA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">B81BED5C65621D75B9C567F9F1B00E80D289F8624D0C8B9368E84D7D15BD1D2B45FAC5C32EEEE24A04240F3CC93BAB25D8A26BA3FF5540728FB8E7DA4EA829BFDACB46BC7AD12CC8E26CB02F28F084469B2FE5DC299397C9FEBF7A03991C4929E5B240DC98F190493ED58F43B02450091C2687713C50DD590D5D72B9B6C6D4D5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-29T06:22:55</elem>
+<elem key="notAfter">2054-10-29T06:22:55</elem>
+</table>
+<elem key="md5">a1de6c0482cbc76c4bea0aea0f324946</elem>
+<elem key="sha1">7a944ba03880291902a8e537f21dd747a50aa8da</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQcFmvQ4GNBo1KQ9/ZMBya3TANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQxMDI5MDYyMjU1WhgPMjA1NDEwMjkwNjIyNTVaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuBvtXGViHXW5&#xa;xWf58bAOgNKJ+GJNDIuTaOhNfRW9HStF+sXDLu7iSgQkDzzJO6sl2KJro/9VQHKP&#xa;uOfaTqgpv9rLRrx60SzI4mywLyjwhEabL+XcKZOXyf6/egOZHEkp5bJA3JjxkEk+&#xa;1Y9DsCRQCRwmh3E8UN1ZDV1yubbG1NUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCy&#xa;FGcKSmS+vWDbgR7uFTfTd4z3FEFwZgehofbunI+NmuXDmI10wg7O+8J7eXjeUnil&#xa;xxTvox0dQPqZfR448VL9AobHIcrHZg/d9tjwyajnYAdjKG3+nGEEoHH59dVAYbvD&#xa;MncB2zYS4R3llfl1vRxf0wv9/ZEd959zWY1QF+rkuA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-10-29T09:02:22+00:00; +25m42s from scanner time."><elem key="delta">1542.0</elem>
+<elem key="date">2024-10-29T09:02:22+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mysql" product="MySQL" version="5.5.5-10.4.14-MariaDB" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.5.5-10.4.14-mariadb</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.5-10.4.14-MariaDB&#xa;  Thread ID: 86&#xa;  Capabilities flags: 63486&#xa;  Some Capabilities: SupportsLoadDataLocal, DontAllowDatabaseTableColumn, LongColumnFlag, IgnoreSpaceBeforeParenthesis, InteractiveClient, SupportsCompression, Support41Auth, ConnectWithDatabase, Speaks41ProtocolNew, Speaks41ProtocolOld, ODBCClient, IgnoreSigpipes, FoundRows, SupportsTransactions, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins&#xa;  Status: Autocommit&#xa;  Salt: 7U(gO4V5D9/}MH^!&amp;;6&gt;&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.5-10.4.14-MariaDB</elem>
+<elem key="Thread ID">86</elem>
+<elem key="Capabilities flags">63486</elem>
+<table key="Some Capabilities">
+<elem>SupportsLoadDataLocal</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>LongColumnFlag</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>InteractiveClient</elem>
+<elem>SupportsCompression</elem>
+<elem>Support41Auth</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>ODBCClient</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>FoundRows</elem>
+<elem>SupportsTransactions</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsAuthPlugins</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">7U(gO4V5D9/}MH^!&amp;;6&gt;</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=PwnDrive&#xa;Issuer: commonName=PwnDrive&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2024-10-28T06:23:28&#xa;Not valid after:  2025-04-29T06:23:28&#xa;MD5:   0c95:2903:6a0e:e9bc:771a:d860:54f7:0825&#xa;SHA-1: e778:aaf0:b969:84d6:3538:d5d9:69da:0a6d:f419:0df0&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1DCCAbygAwIBAgIQQGwLxhHpu45KqXhvRvxXDjANBgkqhkiG9w0BAQUFADAT&#xa;MREwDwYDVQQDEwhQd25Ecml2ZTAeFw0yNDEwMjgwNjIzMjhaFw0yNTA0MjkwNjIz&#xa;MjhaMBMxETAPBgNVBAMTCFB3bkRyaXZlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAxIR4d6D0DNRLsVCYs6TkInOpiX1+5Fy/PtG2OtJMbAH/bfLk+hdz&#xa;4R4A9FY5DEAazMI/KUVY7ZHK1npHnovfUalb13BlAIRcVqmP80UoR30EpHRHhrYP&#xa;vThFTlYDjgNSP7NLwa2CtM/KhsxGKZurXyxA1epphYxI4xc9Hax4IkiRTeNeTv1+&#xa;h4SUINorObNwdpd4dF83uGrLtq10RLOpR5e2OmLT+f6beRcpRbDe35//JQ0f7JZf&#xa;0ZomXAC/axIqCRScClwBXTFSSxfVMeIEevR+H19jHfjH/+MhJZlo8Dv5nixp4Gu0&#xa;h1K50ztnk2xbXh5ysgailF03YuOkfSG9uQIDAQABoyQwIjATBgNVHSUEDDAKBggr&#xa;BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAGNNyqYt1aiE&#xa;420KqvsWmw0/JJQprXMtZjnfPpT4iKjRmMHyf/aVb+IDgI9iSFqvtsY95Pco/6MG&#xa;JOK7eiZzrE0DM6Ak8lRFi2gPxgp5zdQddspavDWEcbXA6kGdyqX5cEcASRx+SXoL&#xa;kLET3rGD2RLNkTqOOfu3wQqrCM+bFOE5itFR35JQImLTs96PC0LMFqbByNf+H/L8&#xa;yuX1emS/Ww/b87cp2IC5r/sHJ9yidjSBmpNXOe02A+xc/KHmznlmX6ytipbDBSFH&#xa;DPeivB1tEN2gKkz+VJo3BgCGjUfigEwQR+zi8RWVDi7Wzx04KZ0rFN1dIvdedss9&#xa;/RIZyp2QT0w=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">PwnDrive</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">PwnDrive</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C4847877A0F40CD44BB15098B3A4E42273A9897D7EE45CBF3ED1B63AD24C6C01FF6DF2E4FA1773E11E00F456390C401ACCC23F294558ED91CAD67A479E8BDF51A95BD7706500845C56A98FF34528477D04A4744786B60FBD38454E56038E03523FB34BC1AD82B4CFCA86CC46299BAB5F2C40D5EA69858C48E3173D1DAC782248914DE35E4EFD7E87849420DA2B39B370769778745F37B86ACBB6AD7444B3A94797B63A62D3F9FE9B79172945B0DEDF9FFF250D1FEC965FD19A265C00BF6B122A09149C0A5C015D31524B17D531E2047AF47E1F5F631DF8C7FFE321259968F03BF99E2C69E06BB48752B9D33B67936C5B5E1E72B206A2945D3762E3A47D21BDB9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T06:23:28</elem>
+<elem key="notAfter">2025-04-29T06:23:28</elem>
+</table>
+<elem key="md5">0c9529036a0ee9bc771ad86054f70825</elem>
+<elem key="sha1">e778aaf0b96984d63538d5d969da0a6df4190df0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1DCCAbygAwIBAgIQQGwLxhHpu45KqXhvRvxXDjANBgkqhkiG9w0BAQUFADAT&#xa;MREwDwYDVQQDEwhQd25Ecml2ZTAeFw0yNDEwMjgwNjIzMjhaFw0yNTA0MjkwNjIz&#xa;MjhaMBMxETAPBgNVBAMTCFB3bkRyaXZlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAxIR4d6D0DNRLsVCYs6TkInOpiX1+5Fy/PtG2OtJMbAH/bfLk+hdz&#xa;4R4A9FY5DEAazMI/KUVY7ZHK1npHnovfUalb13BlAIRcVqmP80UoR30EpHRHhrYP&#xa;vThFTlYDjgNSP7NLwa2CtM/KhsxGKZurXyxA1epphYxI4xc9Hax4IkiRTeNeTv1+&#xa;h4SUINorObNwdpd4dF83uGrLtq10RLOpR5e2OmLT+f6beRcpRbDe35//JQ0f7JZf&#xa;0ZomXAC/axIqCRScClwBXTFSSxfVMeIEevR+H19jHfjH/+MhJZlo8Dv5nixp4Gu0&#xa;h1K50ztnk2xbXh5ysgailF03YuOkfSG9uQIDAQABoyQwIjATBgNVHSUEDDAKBggr&#xa;BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAGNNyqYt1aiE&#xa;420KqvsWmw0/JJQprXMtZjnfPpT4iKjRmMHyf/aVb+IDgI9iSFqvtsY95Pco/6MG&#xa;JOK7eiZzrE0DM6Ak8lRFi2gPxgp5zdQddspavDWEcbXA6kGdyqX5cEcASRx+SXoL&#xa;kLET3rGD2RLNkTqOOfu3wQqrCM+bFOE5itFR35JQImLTs96PC0LMFqbByNf+H/L8&#xa;yuX1emS/Ww/b87cp2IC5r/sHJ9yidjSBmpNXOe02A+xc/KHmznlmX6ytipbDBSFH&#xa;DPeivB1tEN2gKkz+VJo3BgCGjUfigEwQR+zi8RWVDi7Wzx04KZ0rFN1dIvdedss9&#xa;/RIZyp2QT0w=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-10-29T09:02:22+00:00; +25m43s from scanner time."><elem key="delta">1543.0</elem>
+<elem key="date">2024-10-29T09:02:22+00:00</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: PWNDRIVE&#xa;  NetBIOS_Domain_Name: PWNDRIVE&#xa;  NetBIOS_Computer_Name: PWNDRIVE&#xa;  DNS_Domain_Name: PwnDrive&#xa;  DNS_Computer_Name: PwnDrive&#xa;  Product_Version: 6.1.7601&#xa;  System_Time: 2024-10-29T09:02:13+00:00"><elem key="Target_Name">PWNDRIVE</elem>
+<elem key="NetBIOS_Domain_Name">PWNDRIVE</elem>
+<elem key="NetBIOS_Computer_Name">PWNDRIVE</elem>
+<elem key="DNS_Domain_Name">PwnDrive</elem>
+<elem key="DNS_Computer_Name">PwnDrive</elem>
+<elem key="Product_Version">6.1.7601</elem>
+<elem key="System_Time">2024-10-29T09:02:13+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 52298/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 48972/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 22295/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 11860/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-time" output="&#xa;  date: 2024-10-29T09:02:13&#xa;  start_date: 2024-10-29T06:22:53"><elem key="date">2024-10-29T09:02:13</elem>
+<elem key="start_date">2024-10-29T06:22:53</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2008 R2 Enterprise 7601 Service Pack 1 (Windows Server 2008 R2 Enterprise 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2008::sp1&#xa;  Computer name: PwnDrive&#xa;  NetBIOS computer name: PWNDRIVE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2024-10-29T02:02:12-07:00&#xa;"><elem key="os">Windows Server 2008 R2 Enterprise 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows Server 2008 R2 Enterprise 6.1</elem>
+<elem key="server">PWNDRIVE\x00</elem>
+<elem key="date">2024-10-29T02:02:12-07:00</elem>
+<elem key="fqdn">PwnDrive</elem>
+<elem key="domain_dns">PwnDrive</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2008::sp1</elem>
+</script><script id="nbstat" output="NetBIOS name: PWNDRIVE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:0c:29:89:87:cb (VMware)&#xa;Names:&#xa;  PWNDRIVE&lt;00&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  PWNDRIVE&lt;20&gt;         Flags: &lt;unique&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00:0c:29:89:87:cb:00:00:00:00:00:00:00:00:00:00:00&#xa;  00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00&#xa;  00:00:00:00:00:00:00:00:00:00:00:00:00:00"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2:1:0: &#xa;    Message signing enabled but not required"><table key="2:1:0">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="mean: 1h25m42s, deviation: 2h38m45s, median: 25m42s"><elem key="mean">5142</elem>
+<elem key="count">7</elem>
+<elem key="median">1542</elem>
+<elem key="stddev">9525</elem>
+</script></hostscript><times srtt="185050" rttvar="5709" to="207886"/>
+</host>
+<taskbegin task="NSE" time="1730191002"/>
+<taskend task="NSE" time="1730191002"/>
+<taskbegin task="NSE" time="1730191002"/>
+<taskend task="NSE" time="1730191002"/>
+<taskbegin task="NSE" time="1730191002"/>
+<taskend task="NSE" time="1730191002"/>
+<runstats><finished time="1730191002" timestr="Tue Oct 29 08:36:42 2024" summary="Nmap done at Tue Oct 29 08:36:42 2024; 1 IP address (1 host up) scanned in 109.47 seconds" elapsed="109.47" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

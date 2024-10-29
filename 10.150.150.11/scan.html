@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--generated with nmap.xsl - version 0.9c by Benjamin Erb - http://www.benjamin-erb.de/nmap_xsl.php --><style type="text/css">
+/* stylesheet print */
+@media print
+{
+  #menu {
+    display:none;
+  }
+
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    font-size: 13pt;
+    font-weight:bold;
+    margin:4pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight:bold;
+    margin:3pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h3, a:link, a:visited {
+    font-size: 9pt;
+    font-weight:bold;
+    margin:1pt 0pt 0pt 20pt;
+    padding:0;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  p,ul {
+    font-size: 9pt;
+    margin:1pt 0pt 8pt 40pt;
+    padding:0;
+    text-align:left;
+  }
+
+  li {
+    font-size: 9pt;
+    margin:0;
+    padding:0;
+    text-align:left;
+  }
+
+  table {
+    margin:1pt 0pt 8pt 40pt;
+    border:0px;
+    width:90%
+  }
+
+  td {
+    border:0px;
+    border-top:1px solid black;
+    font-size: 9pt;
+  }
+
+  .head td {
+    border:0px;
+    font-weight:bold;
+    font-size: 9pt;
+  }
+  .noprint { display: none; }
+}
+
+/* stylesheet screen */
+@media screen
+{
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+  }
+
+  #container {
+    text-align:left;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  h1 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 14pt;
+    color: #FFFFFF;
+    background-color:#2A0D45;
+    margin:10px 0px 0px 0px;
+    padding:5px 4px 5px 4px;
+    width: 100%;
+    border:1px solid black;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 11pt;
+    color: #000000;
+    margin:30px 0px 0px 0px;
+    padding:4px;
+    width: 100%;
+    background-color:#F0F8FF;
+    text-align: left;
+  }
+
+  h2.green {
+    color: #000000;
+    background-color:#CCFFCC;
+    border-color:#006400;
+  }
+
+  h2.red {
+    color: #000000;
+    background-color:#FFCCCC;
+    border-color:#8B0000;
+  }
+   
+  h3 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 10pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p i {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #CCCCCC;
+  }
+
+  ul {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 8pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  li a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a.up {
+      color:#006400;
+  }
+
+  table {
+    width: 80%;
+    border:0px;
+    color: #000000;
+    background-color: #000000;
+    margin:10px;
+  }
+
+  tr {
+    vertical-align:top;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+  }
+
+  tr.head {
+    background-color: #E1E1E1;
+    color: #000000;
+    font-weight:bold;
+  }
+
+  tr.open {
+    background-color: #CCFFCC;
+    color: #000000;
+  }
+	
+  tr.script {
+    background-color: #EFFFF7;
+    color: #000000;
+  }
+
+  tr.filtered {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  tr.closed {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+    
+  td {
+    padding:2px;
+  }
+        
+  #menu li {
+    display         : inline;
+    margin          : 0;
+    /*margin-right    : 10px;*/
+    padding         : 0;
+    list-style-type : none;
+  }    
+ 
+  #menubox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 120px;
+  }
+  
+  
+  
+  /* This section handle's IE's refusal to honor the fixed CSS attribute */
+  
+  * html div#menubox {
+    position: absolute;
+    top:expression(eval(
+      document.compatMode && document.compatMode=='CSS1Compat') ?
+      documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) 
+      : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+  }
+  /* This fixes the jerky effect when scrolling in IE*/
+  * html,* html body {
+    background: #fff url(nosuchfile) fixed;
+  }
+
+  
+ 
+  .up {
+    color: #000000;
+    background-color:#CCFFCC;
+  }
+  
+  .down {
+    color:#626262;
+    background-color: #F2F2F2;
+  }
+
+  .print_only { display: none; }
+  .hidden { display: none; }
+  .unhidden { display: block; }
+  
+}
+</style>
+<title>Nmap Scan Report - Scanned at Tue Oct 29 08:34:52 2024</title>
+<script type="text/javascript">
+     
+      
+                
+      function toggle(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+          item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+      }
+           
+      function togglePorts(tableID,portState) {
+        var table = document.getElementById(tableID);    
+        var tbody = table.getElementsByTagName("tbody")[0];
+        var rows = tbody.getElementsByTagName("tr");
+        for (var i=0; i < rows.length; i++) {
+          var value = rows[i].getElementsByTagName("td")[2].firstChild.nodeValue;
+          if (value == portState) {
+            rows[i].style.display = (rows[i].style.display == 'none')?'':'none';
+          }
+        }
+      }
+      
+      function toggleAll(portState) {
+        var allTables = document.getElementsByTagName("table");
+        for (var c=0; c < allTables.length; c++) {
+          if (allTables[c].id != "") {
+            togglePorts(allTables[c].id, portState)
+          }
+        }
+      }
+      
+      function init (){
+        toggleAll('closed');
+        toggleAll('filtered');     
+      }     
+            
+      window.onload = init; 
+      
+      
+    
+    </script>
+</head>
+<body>
+<a name="top"></a><div id="container">
+<h1>Nmap Scan Report - Scanned at Tue Oct 29 08:34:52 2024</h1>
+<ul id="menu">
+<li><a href="#scansummary">Scan Summary</a></li>
+<li> | <a href="#host_10_150_150_11" class="up">10.150.150.11</a>
+</li>
+</ul>
+<a name="scansummary"></a><hr class="print_only">
+<h2>Scan Summary</h2>
+<p>
+      Nmap 7.94SVN was initiated at Tue Oct 29 08:34:52 2024 with these arguments:<br><i>/usr/lib/nmap/nmap --privileged -vv -sV -sC -oX scan.xml 10.150.150.11</i><br></p>
+<p>
+    Verbosity: 2; Debug level 0</p>
+<p>Nmap done at Tue Oct 29 08:36:42 2024; 1 IP address (1 host up) scanned in 109.47 seconds</p>
+<hr class="print_only">
+<a name="host_10_150_150_11"></a><h2 class="up">10.150.150.11<span class="print_only">(online)</span>
+</h2>
+<div id="hostblock_10.150.150.11" class="unhidden">
+<h3>Address</h3>
+<ul><li>10.150.150.11
+            (ipv4)
+          </li></ul>
+
+
+<h3>Ports</h3>
+<p>The 986 ports scanned but not shown below are in state: <b>closed</b></p>
+<ul><li><p>986 ports replied with: <b>reset</b></p></li></ul>
+<table id="porttable_10.150.150.11" cellspacing="1">
+<tr class="head">
+<td colspan="2">Port</td>
+<td>State 
+          <a href="javascript:togglePorts('porttable_10.150.150.11','closed');"><span class="noprint"><small> (toggle closed [0] </small></span></a><a href="javascript:togglePorts('porttable_10.150.150.11','filtered');"><span class="noprint"><small> | filtered [0])</small></span></a>
+</td>
+<td>Service</td>
+<td>Reason</td>
+<td>Product</td>
+<td>Version</td>
+<td>Extra info</td>
+</tr>
+
+
+<tr class="open">
+<td>80</td>
+<td>tcp</td>
+<td>open</td>
+<td>http </td>
+<td>syn-ack</td>
+<td>Apache httpd </td>
+<td>2.4.46 </td>
+<td>(Win64) OpenSSL/1.1.1g PHP/7.4.9 </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-methods </td>
+<td colspan="6"><pre>
+  Supported Methods: GET HEAD POST OPTIONS </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-title </td>
+<td colspan="6"><pre>PwnDrive - Your Personal Online Storage </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-favicon </td>
+<td colspan="6"><pre>Unknown favicon MD5: 3345FF745865D02B994859241BCE2B36 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-cookie-flags </td>
+<td colspan="6"><pre>
+  /: 
+    PHPSESSID: 
+      httponly flag not set </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-server-header </td>
+<td colspan="6"><pre>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9 </pre></td>
+</tr>
+<tr class="open">
+<td>135</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>139</td>
+<td>tcp</td>
+<td>open</td>
+<td>netbios-ssn </td>
+<td>syn-ack</td>
+<td>Microsoft Windows netbios-ssn </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>443</td>
+<td>tcp</td>
+<td>open</td>
+<td>http </td>
+<td>syn-ack</td>
+<td>Apache httpd </td>
+<td>2.4.46 </td>
+<td>(Win64) OpenSSL/1.1.1g PHP/7.4.9 </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-cert </td>
+<td colspan="6"><pre>Subject: commonName=localhost
+Issuer: commonName=localhost
+Public Key type: rsa
+Public Key bits: 1024
+Signature Algorithm: sha1WithRSAEncryption
+Not valid before: 2009-11-10T23:48:47
+Not valid after:  2019-11-08T23:48:47
+MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0
+SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6
+-----BEGIN CERTIFICATE-----
+MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+-----END CERTIFICATE-----
+ </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-cookie-flags </td>
+<td colspan="6"><pre>
+  /: 
+    PHPSESSID: 
+      httponly flag not set </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-server-header </td>
+<td colspan="6"><pre>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.9 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-methods </td>
+<td colspan="6"><pre>
+  Supported Methods: GET HEAD POST OPTIONS </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-favicon </td>
+<td colspan="6"><pre>Unknown favicon MD5: 3345FF745865D02B994859241BCE2B36 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-title </td>
+<td colspan="6"><pre>PwnDrive - Your Personal Online Storage </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>tls-alpn </td>
+<td colspan="6"><pre>
+  http/1.1 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-date </td>
+<td colspan="6"><pre>TLS randomness does not represent time </pre></td>
+</tr>
+<tr class="open">
+<td>445</td>
+<td>tcp</td>
+<td>open</td>
+<td>microsoft-ds </td>
+<td>syn-ack</td>
+<td>Windows Server 2008 R2 Enterprise 7601 Service Pack 1 microsoft-ds </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>1433</td>
+<td>tcp</td>
+<td>open</td>
+<td>ms-sql-s </td>
+<td>syn-ack</td>
+<td>Microsoft SQL Server 2012 </td>
+<td>11.00.2100.00; RTM </td>
+<td> </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ms-sql-ntlm-info </td>
+<td colspan="6"><pre>
+  10.150.150.11:1433: 
+    Target_Name: PWNDRIVE
+    NetBIOS_Domain_Name: PWNDRIVE
+    NetBIOS_Computer_Name: PWNDRIVE
+    DNS_Domain_Name: PwnDrive
+    DNS_Computer_Name: PwnDrive
+    Product_Version: 6.1.7601 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ms-sql-info </td>
+<td colspan="6"><pre>
+  10.150.150.11:1433: 
+    Version: 
+      name: Microsoft SQL Server 2012 RTM
+      number: 11.00.2100.00
+      Product: Microsoft SQL Server 2012
+      Service pack level: RTM
+      Post-SP patches applied: false
+    TCP port: 1433 </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-cert </td>
+<td colspan="6"><pre>Subject: commonName=SSL_Self_Signed_Fallback
+Issuer: commonName=SSL_Self_Signed_Fallback
+Public Key type: rsa
+Public Key bits: 1024
+Signature Algorithm: sha1WithRSAEncryption
+Not valid before: 2024-10-29T06:22:55
+Not valid after:  2054-10-29T06:22:55
+MD5:   a1de:6c04:82cb:c76c:4bea:0aea:0f32:4946
+SHA-1: 7a94:4ba0:3880:2919:02a8:e537:f21d:d747:a50a:a8da
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAWSgAwIBAgIQcFmvQ4GNBo1KQ9/ZMBya3TANBgkqhkiG9w0BAQUFADA7
+MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+bABsAGIAYQBjAGswIBcNMjQxMDI5MDYyMjU1WhgPMjA1NDEwMjkwNjIyNTVaMDsx
+OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuBvtXGViHXW5
+xWf58bAOgNKJ+GJNDIuTaOhNfRW9HStF+sXDLu7iSgQkDzzJO6sl2KJro/9VQHKP
+uOfaTqgpv9rLRrx60SzI4mywLyjwhEabL+XcKZOXyf6/egOZHEkp5bJA3JjxkEk+
+1Y9DsCRQCRwmh3E8UN1ZDV1yubbG1NUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCy
+FGcKSmS+vWDbgR7uFTfTd4z3FEFwZgehofbunI+NmuXDmI10wg7O+8J7eXjeUnil
+xxTvox0dQPqZfR448VL9AobHIcrHZg/d9tjwyajnYAdjKG3+nGEEoHH59dVAYbvD
+MncB2zYS4R3llfl1vRxf0wv9/ZEd959zWY1QF+rkuA==
+-----END CERTIFICATE-----
+ </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-date </td>
+<td colspan="6"><pre>2024-10-29T09:02:22+00:00; +25m42s from scanner time. </pre></td>
+</tr>
+<tr class="open">
+<td>3306</td>
+<td>tcp</td>
+<td>open</td>
+<td>mysql </td>
+<td>syn-ack</td>
+<td>MySQL </td>
+<td>5.5.5-10.4.14-MariaDB </td>
+<td> </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>mysql-info </td>
+<td colspan="6"><pre>
+  Protocol: 10
+  Version: 5.5.5-10.4.14-MariaDB
+  Thread ID: 86
+  Capabilities flags: 63486
+  Some Capabilities: SupportsLoadDataLocal, DontAllowDatabaseTableColumn, LongColumnFlag, IgnoreSpaceBeforeParenthesis, InteractiveClient, SupportsCompression, Support41Auth, ConnectWithDatabase, Speaks41ProtocolNew, Speaks41ProtocolOld, ODBCClient, IgnoreSigpipes, FoundRows, SupportsTransactions, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+  Status: Autocommit
+  Salt: 7U(gO4V5D9/}MH^!&amp;;6&gt;
+  Auth Plugin Name: mysql_native_password </pre></td>
+</tr>
+<tr class="open">
+<td>3389</td>
+<td>tcp</td>
+<td>open</td>
+<td>ms-wbt-server </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-cert </td>
+<td colspan="6"><pre>Subject: commonName=PwnDrive
+Issuer: commonName=PwnDrive
+Public Key type: rsa
+Public Key bits: 2048
+Signature Algorithm: sha1WithRSAEncryption
+Not valid before: 2024-10-28T06:23:28
+Not valid after:  2025-04-29T06:23:28
+MD5:   0c95:2903:6a0e:e9bc:771a:d860:54f7:0825
+SHA-1: e778:aaf0:b969:84d6:3538:d5d9:69da:0a6d:f419:0df0
+-----BEGIN CERTIFICATE-----
+MIIC1DCCAbygAwIBAgIQQGwLxhHpu45KqXhvRvxXDjANBgkqhkiG9w0BAQUFADAT
+MREwDwYDVQQDEwhQd25Ecml2ZTAeFw0yNDEwMjgwNjIzMjhaFw0yNTA0MjkwNjIz
+MjhaMBMxETAPBgNVBAMTCFB3bkRyaXZlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEAxIR4d6D0DNRLsVCYs6TkInOpiX1+5Fy/PtG2OtJMbAH/bfLk+hdz
+4R4A9FY5DEAazMI/KUVY7ZHK1npHnovfUalb13BlAIRcVqmP80UoR30EpHRHhrYP
+vThFTlYDjgNSP7NLwa2CtM/KhsxGKZurXyxA1epphYxI4xc9Hax4IkiRTeNeTv1+
+h4SUINorObNwdpd4dF83uGrLtq10RLOpR5e2OmLT+f6beRcpRbDe35//JQ0f7JZf
+0ZomXAC/axIqCRScClwBXTFSSxfVMeIEevR+H19jHfjH/+MhJZlo8Dv5nixp4Gu0
+h1K50ztnk2xbXh5ysgailF03YuOkfSG9uQIDAQABoyQwIjATBgNVHSUEDDAKBggr
+BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAGNNyqYt1aiE
+420KqvsWmw0/JJQprXMtZjnfPpT4iKjRmMHyf/aVb+IDgI9iSFqvtsY95Pco/6MG
+JOK7eiZzrE0DM6Ak8lRFi2gPxgp5zdQddspavDWEcbXA6kGdyqX5cEcASRx+SXoL
+kLET3rGD2RLNkTqOOfu3wQqrCM+bFOE5itFR35JQImLTs96PC0LMFqbByNf+H/L8
+yuX1emS/Ww/b87cp2IC5r/sHJ9yidjSBmpNXOe02A+xc/KHmznlmX6ytipbDBSFH
+DPeivB1tEN2gKkz+VJo3BgCGjUfigEwQR+zi8RWVDi7Wzx04KZ0rFN1dIvdedss9
+/RIZyp2QT0w=
+-----END CERTIFICATE-----
+ </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssl-date </td>
+<td colspan="6"><pre>2024-10-29T09:02:22+00:00; +25m43s from scanner time. </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>rdp-ntlm-info </td>
+<td colspan="6"><pre>
+  Target_Name: PWNDRIVE
+  NetBIOS_Domain_Name: PWNDRIVE
+  NetBIOS_Computer_Name: PWNDRIVE
+  DNS_Domain_Name: PwnDrive
+  DNS_Computer_Name: PwnDrive
+  Product_Version: 6.1.7601
+  System_Time: 2024-10-29T09:02:13+00:00 </pre></td>
+</tr>
+<tr class="open">
+<td>49152</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>49153</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>49154</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>49155</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>49156</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>49157</td>
+<td>tcp</td>
+<td>open</td>
+<td>msrpc </td>
+<td>syn-ack</td>
+<td>Microsoft Windows RPC </td>
+<td> </td>
+<td> </td>
+</tr>
+</table>
+<h3>Host Script Output</h3>
+<table>
+<tr class="head">
+<td>Script Name</td>
+<td>Output</td>
+</tr>
+<tr class="script">
+<td>p2p-conficker </td>
+<td><pre>
+  Checking for Conficker.C or higher...
+  Check 1 (port 52298/tcp): CLEAN (Couldn't connect)
+  Check 2 (port 48972/tcp): CLEAN (Couldn't connect)
+  Check 3 (port 22295/udp): CLEAN (Failed to receive data)
+  Check 4 (port 11860/udp): CLEAN (Timeout)
+  0/4 checks are positive: Host is CLEAN or ports are blocked
+ </pre></td>
+</tr>
+<tr class="script">
+<td>smb2-time </td>
+<td><pre>
+  date: 2024-10-29T09:02:13
+  start_date: 2024-10-29T06:22:53 </pre></td>
+</tr>
+<tr class="script">
+<td>smb-os-discovery </td>
+<td><pre>
+  OS: Windows Server 2008 R2 Enterprise 7601 Service Pack 1 (Windows Server 2008 R2 Enterprise 6.1)
+  OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+  Computer name: PwnDrive
+  NetBIOS computer name: PWNDRIVE\x00
+  Workgroup: WORKGROUP\x00
+  System time: 2024-10-29T02:02:12-07:00
+ </pre></td>
+</tr>
+<tr class="script">
+<td>nbstat </td>
+<td><pre>NetBIOS name: PWNDRIVE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:0c:29:89:87:cb (VMware)
+Names:
+  PWNDRIVE&lt;00&gt;         Flags: &lt;unique&gt;&lt;active&gt;
+  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;
+  PWNDRIVE&lt;20&gt;         Flags: &lt;unique&gt;&lt;active&gt;
+Statistics:
+  00:0c:29:89:87:cb:00:00:00:00:00:00:00:00:00:00:00
+  00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+  00:00:00:00:00:00:00:00:00:00:00:00:00:00 </pre></td>
+</tr>
+<tr class="script">
+<td>smb-security-mode </td>
+<td><pre>
+  account_used: guest
+  authentication_level: user
+  challenge_response: supported
+  message_signing: disabled (dangerous, but default) </pre></td>
+</tr>
+<tr class="script">
+<td>smb2-security-mode </td>
+<td><pre>
+  2:1:0: 
+    Message signing enabled but not required </pre></td>
+</tr>
+<tr class="script">
+<td>clock-skew </td>
+<td><pre>mean: 1h25m42s, deviation: 2h38m45s, median: 25m42s </pre></td>
+</tr>
+</table>
+<br><a href="javascript:toggle('metrics_10.150.150.11');">
+    Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_10.150.150.11" class="hidden"><table cellspacing="1">
+<tr class="head">
+<td>Metric</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Ping Results</td>
+<td>echo-reply</td>
+</tr>
+</table></div>
+</div>
+</div>
+<div id="menubox" class="noprint">
+<a href="#top"><small>Go to top</small></a><br><a href="javascript:toggleAll('closed');"><small>Toggle Closed Ports</small></a><br><a href="javascript:toggleAll('filtered');"><small>Toggle Filtered Ports</small></a>
+</div>
+</body>
+</html>

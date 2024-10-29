@@ -1,0 +1,5 @@
+nmap -vv -sV -sC $ip
+
+nmap nmap -vv -p 21 --script ftp-vsftpd-backdoor $ip
+
+search vsftpd on msfconsole and go from there
